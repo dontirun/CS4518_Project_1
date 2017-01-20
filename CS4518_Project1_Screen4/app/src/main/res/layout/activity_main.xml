@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -9,7 +10,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#000"
-    tools:context="com.example.arun.cs4518_project1_screen4.MainActivity">
+    tools:context="com.example.arun.cs4518_project1_screen4.MainActivity"
+    android:weightSum="1">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -76,7 +78,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/divide"
         android:weightSum="4"
         android:layout_below="@+id/linearLayout"
@@ -190,6 +192,7 @@
                 android:ems="10"
                 android:layout_weight="1"
                 android:textColor="#fff"
+                android:backgroundTint="#DDD"
                 android:id="@+id/editName" />
 
             <EditText
@@ -199,6 +202,7 @@
                 android:ems="10"
                 android:layout_weight="1"
                 android:textColor="#fff"
+                android:backgroundTint="#DDD"
                 android:id="@+id/editPhone" />
 
             <EditText
@@ -208,6 +212,7 @@
                 android:ems="10"
                 android:layout_weight="1"
                 android:textColor="#fff"
+                android:backgroundTint="#DDD"
                 android:id="@+id/editEmail" />
 
             <EditText
@@ -217,6 +222,7 @@
                 android:ems="10"
                 android:layout_weight="1"
                 android:textColor="#fff"
+                android:backgroundTint="#DDD"
                 android:id="@+id/editAdd1" />
 
             <EditText
@@ -226,6 +232,7 @@
                 android:ems="10"
                 android:layout_weight="1"
                 android:textColor="#fff"
+                android:backgroundTint="#DDD"
                 android:id="@+id/EditAdd2" />
 
             <EditText
@@ -235,6 +242,7 @@
                 android:ems="10"
                 android:layout_weight="1"
                 android:textColor="#fff"
+                android:backgroundTint="#DDD"
                 android:id="@+id/editCity" />
 
             <EditText
@@ -244,6 +252,7 @@
                 android:ems="10"
                 android:id="@+id/editState"
                 android:textColor="#fff"
+                android:backgroundTint="#DDD"
                 android:layout_weight="1" />
 
             <EditText
@@ -253,6 +262,7 @@
                 android:ems="10"
                 android:layout_weight="1"
                 android:textColor="#fff"
+                android:backgroundTint="#DDD"
                 android:id="@+id/editCountry" />
 
             <EditText
@@ -262,10 +272,74 @@
                 android:ems="10"
                 android:layout_weight="1"
                 android:textColor="#fff"
+                android:backgroundTint="#DDD"
                 android:id="@+id/editZip" />
         </LinearLayout>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:weightSum="6"
+        android:layout_below="@+id/divide"
+        android:id="@+id/linearLayout2"
+        >
 
-</RelativeLayout>
+        <Button
+            android:text="Create"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/create"
+            android:layout_alignParentStart="true"
+            android:layout_width="0dip"
+            android:backgroundTint="#777"
+            android:textColor="#FFF"
+            android:textSize="8sp"
+
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Update"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/search"
+            android:id="@+id/update"
+            android:backgroundTint="#777"
+            android:textColor="#FFF"
+            android:textSize="8sp"
+
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Delete"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/clear1"
+            android:id="@+id/delete"
+            android:backgroundTint="#777"
+            android:textColor="#FFF"
+            android:textSize="8sp"
+
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Clear"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/importContacts"
+            android:id="@+id/clear2"
+            android:backgroundTint="#777"
+            android:textColor="#FFF"
+            android:textSize="8sp"
+
+            android:layout_weight="1.5" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
